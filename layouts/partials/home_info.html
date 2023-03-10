@@ -14,4 +14,13 @@
         {{ partial "social_icons.html" $.Site.Params.socialIcons }}
     </footer>
 </article>
+
+<article class="second-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title2 | markdownify }}</h1>
+    </header>
+    <section class="entry-content">
+        <p>{{ .Content2 | markdownify }}</p>
+    </section>
+</article>
 {{- end -}}
